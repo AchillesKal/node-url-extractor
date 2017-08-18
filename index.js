@@ -1,5 +1,7 @@
 module.exports = {
     extractUrl (url) {
-        return url;
+        let newUrl = url.replace(/^https?\:\/\//i, "");
+
+        return newUrl;
     }
 };
