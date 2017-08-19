@@ -8,7 +8,7 @@ describe('Remove Schema', function () {
     ];
 
     urls.forEach(value => {
-        it('Should return achilleskal.com', () => {
+        it(` ${value} should return achilleskal.com`, () => {
             assert.equal(app.extractUrl(value), 'achilleskal.com');
         })
     });
